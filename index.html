@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" inital-scale="1.0"> 
+    <title>MY Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymus"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <div class="navi">
+      <nav>
+           <h1><span>Anil's</span> Portfolio</h1>
+          <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About me</a></li>
+              <li><a href="#services">My skills</a></li>
+              <li><a href="#portfolio">projects</a></li>
+              <li><a href="#contact">Contact me</a></li>
+              <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav> 
+       </div>
+        
+        <div class="header-text">
+    <p>UI/UX Designer</p>
+        <h1>Hi, I'm <span class="anil">Anil Kumar</span> and I'm a <br> <span id="element"></span></h1>
+      </div>
+    </div>
+</div>
+    
+<!---------------------------------------about-------------------------------------->
+    
+<div id="about">
+    <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <img src="myimages/aboutme.jpg">
+            </div>
+            <div class="col-2">
+            <h1 class="subtitle">About Me</h1>
+                <br>
+                <p class="para">I'm a passionate full-stack developer and competitive programmer. Currently pursuing B.Tech in Chemical Engineering at IIT Kharagpur, I have a strong foundation in web development and a knack for problem-solving. I'm always eager to take on new challenges and collaborate with like-minded individuals to create exceptional projects. I enjoy playing cricket, working out at the gym ,watching movies, and exploring the outdoors , fueling my passion for sports, fitness, and adventure.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Achievments')">Coursework</p>
+                    <p class="tab-links" onclick="opentab('education')">Projects</p>
+                </div>
+                 <div class="tab-contents active-tab" id="skills">
+
+                  <ul>
+
+                <li><span>Programming languages</span><br>C | C++ | Python | Javasript</li>
+                <li><span>Web Development</span><br>Html-5 | CSS | React js | Node js</li>
+                <li><span>Libraries</span><br>C++ STL | Git</li>
+
+                </ul>
+                </div>
+                     <div class="tab-contents" id="Achievments">
+
+                  <ul>
+
+                <li><span>Computer science</span><br>Programming and Data Structures* | Artificial Intelligence Foundations and Applications</li>
+                <li><span>Maths courses</span><br> Linear Algebra | Calculus | Transform Calculus</li>
+                <li><span>web Development</span><br>: Html-5 | CSS | Bootstrap (Scrimba.com) | Javascript | React Js (coursera)</li>
+
+                </ul>
+                </div>
+                         <div class="tab-contents" id="education">
+
+                  <ul>
+
+                <li><span>September 2022</span><br>Desined a snake game website</li>
+                <li><span>March 2023</span><br>Designed a Weather app to check weather in cities.</li>
+                <li><span>June 2023</span><br>Worked on Judiciary information system project.</li>
+
+                </ul>
+
+                </div>
+            </div>
+        </div>
+     </div>            
+</div>
+    
+<!-------------------------------services------------------------------------------>
+    
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1> 
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Completed full stack web development online course and had done decent projects in both frontend and backend.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!------------------------------portfolio---------------------------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="myimages/netflix.jpg"> 
+                <div class="layer">
+                    <h3 style="font-size: 20px"><b>Netflix clone</b></h3>
+                    <p>This project is the clone of front end of Netflix web application. HTML is used for the content on the page, CSS is
+                    used for the styling of the content on the web page and JavaScript is used for the functionality of the web page.</p>
+                    <a href="https://github.com/ANIL-KUMAR-YEDLA/Netflix-Clone.git"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="myimages/judiciary.jpg">
+                <div class="layer">
+                    <h3 style="font-size: 20px"> Judiciary information system</h3>
+                    <p>A software designed to help the court officials to manage the cases, store the cases and schedule the hearing date
+                        according to the timimgs of the court and register.
+                        A software designed to help the court officials to manage the cases, store the cases and schedule the hearing date
+                        according to the timimgs of the court and register.
+                   </p>
+                    <a href="https://github.com/ANIL-KUMAR-YEDLA/Judiciary-information-system.git"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="myimages/weather.jpg">
+                <div class="layer">
+                    <h3 style="font-size: 20px">Weather App</h3>
+                    <p>Developed a snake game website using HTML, CSS, and JavaScript, providing an interactive and engaging gaming experience for users.Implemented game mechanics such as snake movement, food generation, and collision detection, creating a faithful adaptation of the classic Snake game in a web environment.</p>
+                    <a href="https://github.com/ANIL-KUMAR-YEDLA/Weather-app.git"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+    
+    
+ <!------------------------------------contact------------------------------------->   
+    
+    
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>anilkumaryedla532@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>9347266289</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="myimages/cvGenerate%20(2).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required> 
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>  
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+    <p>copyright @ Anil Kumar.Made with <i class="fas fa-heart"></i> by My Portfolio.</p>
+    </div>
+</div>
+    
+    
+ <!-------------------------------------------javascript---------------------------->  
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    
+    <script>
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("nav").addClass("black");
+            }
+            else{
+                $("nav").removeClass("black");
+            }
+        });
+    </script>
+    
+    
+    
+    <script>
+     var tablinks = document.getElementsByClassName("tab-links");
+
+     var tabcontents = document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname) {
+
+           for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+           }
+
+          for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+          }
+
+          event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+
+}
+    </script>
+    
+     
+    
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right='0';
+        }
+        function closemenu(){
+            sidemenu.style.right='-200px';
+        }
+    </script>
+        
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['Passionate Web Developer.', 'Web Designer.','Competetive Programmer.','Video Editor.'],
+      typeSpeed: 50,
+    });
+  </script>
+    
+    
+</body>
+</html>
